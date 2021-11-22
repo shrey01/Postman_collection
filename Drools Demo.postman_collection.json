@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "38f8ee3c-6c55-4c26-a414-bc0e2ffc7115",
+		"name": "Drools Demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST RESPONSE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"Candidate\":{\r\n      \"listo\":[\r\n         \"Option1\",\r\n         \"Option2\",\r\n         \"Option3\",\r\n         \"Option4\"\r\n      ],\r\n      \"category\":\"Any\",\r\n      \"title\":\"Exam1\",\r\n      \"description\":\"Demo\",\r\n      \"ChoiceQ1\":\"1\",\r\n      \"ChoiceQ2\":\"3\",\r\n      \"ChoiceQ3\":\"1\",\r\n      \"ChoiceQ4\":\"1\",\r\n      \"ChoiceQ5\":\"4\",\r\n      \"ChoiceQ6\":\"3\",\r\n      \"ChoiceQ7\":\"3\",\r\n      \"ChoiceQ8\":\"1\",\r\n      \"ChoiceQ9\":\"1\",\r\n      \"ChoiceQ10\":\"4\"\r\n   },\r\n   \"Option\":{\r\n      \"title\":\"Exam1\",\r\n      \"assignedScore\":\"3\"\r\n   },\r\n   \"Questionnaire\":{\r\n      \"vendor\":\"Clovity\"\r\n   }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/scoringEngine/getResult",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"scoringEngine",
+						"getResult"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

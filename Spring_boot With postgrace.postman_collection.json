@@ -1,0 +1,166 @@
+{
+	"info": {
+		"_postman_id": "a14f14b0-42a2-49f1-9c94-9ebefce67c4d",
+		"name": "Spring_boot With postgrace",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Questions",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Question 1\",\r\n    \"description\": \"What is Dog\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/quiz/questions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"quiz",
+						"questions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Questions",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Question 1\",\r\n    \"description\": \"What is Dog\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/quiz/questions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"quiz",
+						"questions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE Questions by ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"f4ba553e-6cd4-4c49-8ace-8343372357b4\",\r\n    \"title\":\"Question 1\",\r\n    \"description\":\"What is Dog\",\r\n    \"published\":\"true\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/quiz/questions/6da12903-224b-4886-b242-e0a522fbee69",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"quiz",
+						"questions",
+						"6da12903-224b-4886-b242-e0a522fbee69"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Questions by ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/quiz/questions/f4ba553e-6cd4-4c49-8ace-8343372357b4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"quiz",
+						"questions",
+						"f4ba553e-6cd4-4c49-8ace-8343372357b4"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Brahmhastra",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/quiz/questions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"quiz",
+						"questions"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
